@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Todo List</title>
+
+	<!-- styles -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- vue -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js" defer></script>
+	<script src="js/script.js" defer></script>
+</head>
+
+<body>
+	<h1>Guardate la console per vedere quante volte viene eseguito il greet definito in methods e quante la computed property computedGreet</h1>
+	<div id="app">
+		<h2>Con il method</h2>
+		<ul>
+			<li v-for="i in 10">
+				{{ greet() }}
+			</li>
+		</ul>
+
+		<h2>Con la computed property</h2>
+		<ul>
+			<li v-for="i in 10">
+				{{ computedGreet }}
+			</li>
+		</ul>
+	</div>
+</body>
+
+</html>
